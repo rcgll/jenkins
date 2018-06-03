@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+# Auth:Rex 
+# Date:2018-06-03
+
+for name in aliyunops3 aliyunops4
+do
+  echo `date +"%Y-%m-%d_%H:%M:%S"` >>  /tmp/log 
+  (ping -c1 -w1  $name &> /dev/null) && echo "ping $name is ok" >> /tmp/log ||  echo "ping $name is failed" >> /tmp/log 
+done
