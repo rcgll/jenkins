@@ -2,6 +2,7 @@
 
 # Auth:Rex 
 # Date:2018-06-03
+# version: 1.1
 
 for name in aliyunops3 aliyunops4
 do
